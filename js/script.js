@@ -32,7 +32,7 @@ function showMyDB() {
 
 function rememberMyFilms() {
 	for (let i = 0; i < 2; i++) {
-		const a = prompt('Один из последних просмотренных фильмов?');
+		const a = prompt('Один из последних просмотренных фильмов?').trim();
 		if (a === '' || a === null || a.length > 50) {
 			alert('Вы не ввели название фильма! Попробуйте снова')
 			i--;
